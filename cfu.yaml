@@ -1,0 +1,273 @@
+quiz_title: Backend Fundamentals - Check for Understanding
+quiz_instructions: |
+
+  Answer the following questions:
+
+questions:
+# ------------------------------------------------------
+  - question_01:
+    question_type: multiple_choice
+    text: >
+      Which of the following is not a strength of Java?
+    answers:
+      - answer_weight: 100
+        answer_text: |
+          Java is new and thus has a lot of people excited about its prospects.
+        description: |
+          Correct, Java is not new. Java has been around a relatively long time (since `95)
+          and has a strong track record of being stable. New languages are seen as risky for
+          large projects as they are still being worked out and can inadvertantly break.
+        answer_ident: 1
+      - answer_weight: 0
+        answer_text: |
+          Java has a strong community of developers that answer questions and build tools.
+        description: >
+          Incorrect, this is one of Java's strengths.
+        answer_ident: 2
+      - answer_weight: 0
+        answer_text: |
+          Java can run on many devices thanks to the Java Virtual Machine.
+        description: >
+          Incorrect. Being able to run on many different devices is one of Java's strenghts.
+        answer_ident: 3
+      - answer_weight: 0
+        answer_text: |
+          Java can be used to solve a wide-range of problems.
+        description: 'Incorrect. Java is used to write mobile applications, websites, server, and so much more.'
+        answer_ident: 4
+  # ------------------------------------------------------
+  - question_02:
+    question_type: multiple_choice
+    text: >
+      In Java, what symbol denotes where one command ends?
+    answers:
+      - answer_weight: 100
+        answer_text: ";"
+        description: 'Correct, semicolons tell Java that it has reached the end of a command.'
+        answer_ident: 1
+      - answer_weight: 0
+        answer_text: "{}"
+        description: 'Incorrect, brackets define a block of code.'
+        answer_ident: 2
+      - answer_weight: 0
+        answer_text: "()"
+        description: 'Incorrect, parenthesis are usually used for methods'
+        answer_ident: 3
+      - answer_weight: 0
+        answer_text: "!"
+        description: 'Incorrect, exclamation points are used in Java, but you will learn more about their uses later'
+        answer_ident: 4
+  # ------------------------------------------------------
+  - question_03:
+    question_type: multiple_choice
+    text: >
+      Read the following code. Which line will be run after line 5?
+      ```
+      1|  class Main {
+      2|    public static void main(String[] args) {
+      3|      System.out.println("Hello world!");
+      4|
+      5|      if (1 < 2) {
+      6|        System.out.println("The if statment is true!");
+      7|      } else {
+      8|        System.out.println("The if statement is false!");
+      9|      }
+      10|
+      11|     System.out.println("This is the end of the program.");
+      12|   }
+      13| }
+      ```
+    answers:
+      - answer_weight: 0
+        answer_text: 'Line 3'
+        description: 'Incorrect, this line has already been run, and Java runs code from top to bottom.'
+        answer_ident: 4
+      - answer_weight: 100
+        answer_text: 'Line 6'
+        description: 'Correct, the if statement is true, so it will run Line 6 next.'
+        answer_ident: 1
+      - answer_weight: 0
+        answer_text: 'Line 8'
+        description: 'Incorrect, if the if statement were false, then this line would run.'
+        answer_ident: 2
+      - answer_weight: 0
+        answer_text: 'Line 11'
+        description: 'Incorrect, the if statement is true, so it diverts the flow into the if statement.'
+        answer_ident: 3
+
+  # ------------------------------------------------------
+  - question_04:
+    question_type: true_false_question
+    text: >
+      Unless otherwise specified, Java code is processed starting from the top of a block and going down one line at a time.
+    answers:
+      - answer_weight: 100
+        answer_text: 'true'
+        description: |
+          Correct. Java is read starting from the top of a block of code and go down one line at a time.
+          The code may jump to different lines if it contains if statements, methods, or other control flow mechanisms.
+        answer_ident: 1
+      - answer_weight: 0
+        answer_text: 'false'
+        description: |
+          Incorrect. Java is read starting from the top of a block of code and go down one line at a time.
+          The code may jump to different lines if it contains if statements, methods, or other control flow mechanisms.
+        answer_ident: 2
+  # ------------------------------------------------------
+  - question_05:
+    question_type: multiple_answers_question
+    text: >
+      Which of the following are responsibilities of a Backend Developer?
+    answers:
+      - answer_weight: 100
+        answer_text: |
+          Securing and storing data
+        description: 'Correct'
+        answer_ident: 1
+      - answer_weight: 100
+        answer_text: |
+          Sending, reciving, and processing data
+        description: 'Correct'
+        answer_ident: 2
+      - answer_weight: 0
+        answer_text: |
+          Placing images and buttons on webpages
+        description: 'Incorrect, this is done by frontend developers'
+        answer_ident: 3
+      - answer_weight: 0
+        answer_text: |
+          Answer IT questions to customers
+        description: 'Incorrect, this is done by customer service'
+        answer_ident: 4
+  # ------------------------------------------------------
+  - question_06:
+    question_type: multiple_choice
+    text: >
+      Which Java line (if any) is broken?
+      ```
+      1| public void printName() {
+      2|   System.out.println("Bill Joy")
+      3| }
+      ```
+    answers:
+      - answer_weight: 0
+        answer_text: 'Line 1'
+        description: 'Incorrect. Make sure that all brackets and semicolons are present.'
+        answer_ident: 1
+      - answer_weight: 100
+        answer_text: 'Line 2'
+        description: 'Correct'
+        answer_ident: 2
+      - answer_weight: 0
+        answer_text: 'Line 3'
+        description: 'Incorrect. Make sure that all brackets and semicolons are present.'
+        answer_ident: 3
+      - answer_weight: 0
+        answer_text: "I don't see any issue."
+        description: 'Incorrect. Make sure that all brackets and semicolons are present.'
+        answer_ident: 4
+  # ------------------------------------------------------
+  - question_07:
+    question_type: multiple_choice
+    text: >
+        Which Java line (if any) is broken?
+        ```
+        1| public void foo()
+        2|   doSomething();
+        3| }
+        ```
+    answers:
+      - answer_weight: 100
+        answer_text: 'Line 1'
+        description: 'Correct'
+        answer_ident: 1
+      - answer_weight: 0
+        answer_text: 'Line 2'
+        description: 'Incorrect. Make sure that all brackets and semicolons are present.'
+        answer_ident: 2
+      - answer_weight: 0
+        answer_text: 'Line 3'
+        description: 'Incorrect. Make sure that all brackets and semicolons are present.'
+        answer_ident: 3
+      - answer_weight: 0
+        answer_text: "I don't see any issue."
+        description: 'Incorrect. Make sure that all brackets and semicolons are present.'
+        answer_ident: 4
+    # ------------------------------------------------------
+  - question_08:
+    question_type: multiple_answers_question
+    text: >
+      Select all of the correct representations of a String in Java?
+    answers:
+      - answer_weight: 100
+        answer_text: >
+          "Hello World!"
+        description: 'Correct, anything between two quotes is a string.'
+        answer_ident: 1
+      - answer_weight: 0
+        answer_text: >
+          { Hello World! }
+        description: 'Incorrect, quotes are required to represent a string'
+        answer_ident: 2
+      - answer_weight: 0
+        answer_text: >
+          12345
+        description: 'Incorrect, quotes are required to represent a string'
+        answer_ident: 3
+      - answer_weight: 100
+        answer_text: >
+          "12345"
+        description: 'Correct, anything between two quotes is a string.'
+        answer_ident: 4
+  # ------------------------------------------------------
+  - question_09:
+    question_type: multiple_answers_question
+    text: >
+      Select all of the correct representations of an integer in Java?
+    answers:
+      - answer_weight: 100
+        answer_text: >
+          15
+        description: 'Correct, all whole numbers are integers.'
+        answer_ident: 1
+      - answer_weight: 0
+        answer_text: >
+          63.3
+        description: 'Incorrect, integers must be whole numbers.'
+        answer_ident: 2
+      - answer_weight: 100
+        answer_text: >
+          123
+        description: 'Correct, all whole numbers are integers.'
+        answer_ident: 3
+      - answer_weight: 0
+        answer_text: >
+          "123"
+        description: 'Incorrect, anything between two quotes is a string.'
+        answer_ident: 4
+  # ------------------------------------------------------
+  - question_10:
+    question_type: multiple_choice
+    text: >
+      Select the correct definition of boolean.
+    answers:
+      - answer_weight: 100
+        answer_text: >
+          A value that is represented by either true or false.
+        description: 'Correct, booleans are either true or false'
+        answer_ident: 1
+      - answer_weight: 0
+        answer_text: >
+          A value that can be a whole number.
+        description: 'Incorrect, whole numbers are represented as integers.'
+        answer_ident: 2
+      - answer_weight: 0
+        answer_text: >
+          A value that can be a decimal number.
+        description: 'Incorrect, decimals are represented as floats.'
+        answer_ident: 3
+      - answer_weight: 0
+        answer_text: >
+          A value that represents a set of characters.
+        description: 'Incorrect, sets of characters are represented as Strings.'
+        answer_ident: 4
